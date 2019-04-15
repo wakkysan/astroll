@@ -1347,6 +1347,27 @@ animation: gearAnimation 5s linear infinite;
   0% { transform: rotate(   0deg); }
 100% { transform: rotate( 360deg); }
 }
+#articleBody #snsArea.sectionInner {
+max-width: 1108px;
+}
+#snsArea::after {
+content: '';
+display: block;
+clear: both;
+}
+#twitterTimeline,
+#facebookTimeline {
+width: 50%;
+float: left;
+}
+#twitterTimeline {
+padding-right: 16px;
+}
+#facebookTimeline {
+padding-left: 16px;
+}
+
+
 
 @media screen and ( max-width: 1260px ){
 
@@ -1429,6 +1450,12 @@ font-size: 3vw;
 #website.index #articleBody p {
 margin: 32px 0;
 font-size: 3vw;
+}
+#twitterTimeline,
+#facebookTimeline {
+width: 100%;
+float: none;
+padding: 0;
 }
 
 } /* /640px */
