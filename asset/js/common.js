@@ -21,8 +21,20 @@ $('#overlay').on('touchstart click', function(){
     $('body').removeClass('overlay');
 });
 
-// Language menu
+// share menu
+$('span.share').on('click', function(){
+    $( this ).removeClass('hover');
+    $( 'span.language, #languageMenu').removeClass('open');
+    if( !$('#shareMenu').is('.open') ) {
+        $( 'span.share, #shareMenu').addClass('open');
+    } else {
+        $( 'span.share, #shareMenu').removeClass('open');
+    }
+});
+// language menu
 $('span.language').on('click', function(){
+    $( this ).removeClass('hover');
+    $( 'span.share, #shareMenu').removeClass('open');
     if( !$('#languageMenu').is('.open') ) {
         $( 'span.language, #languageMenu').addClass('open');
     } else {

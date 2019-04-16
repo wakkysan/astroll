@@ -54,7 +54,7 @@ $(function(){
             $('header').css('top', 0 );
             $('#backgroundCanvas').css('opacity', 0.3 );
         } else {
-            $('header').css('top', '-48px' );
+            $('header').css('top', '-80px' );
             $('#backgroundCanvas').css('opacity', 1 );
         }
         if ( windowScrollTop < headerHeight ){

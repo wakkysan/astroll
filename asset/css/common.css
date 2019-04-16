@@ -198,7 +198,7 @@ font-size: 14px;
 box-shadow: 0 0 8px rgba( 0, 0, 0, 0.3 );
 font-weight: 900;
 }
-#subMenu a:hover + span,
+#subMenu a.hover + span,
 #subMenu span.subMenuPlus.hover + span {
 top: 110%;
 opacity: 1;
@@ -266,8 +266,8 @@ color: #FF833B;
 color: #FFF;
 text-decoration: none;
 }
-#shareMenu a:hover,
-#languageMenu a:hover {
+#shareMenu a.hover,
+#languageMenu a.hover {
 color: #CCC;
 }
 
@@ -342,9 +342,11 @@ transform: rotate( 45deg );
 bottom: 11px;
 transform: rotate( -45deg );
 }
+#shareMenu.open,
 #languageMenu.open {
 display: none;
 }
+.open #shareMenu.open,
 .open #languageMenu.open {
 display: block;
 }
@@ -385,8 +387,8 @@ margin-left: -4px;
 border: 4px solid transparent;
 border-top: 4px solid #FF833B;
 }
-#subMenu a:hover,
-#subMenu a:hover + span,
+#subMenu a.hover,
+#subMenu a.hover + span,
 #subMenu span.subMenuPlus.hover,
 #subMenu span.subMenuPlus.hover + span,
 #subMenu span.subMenuPlus.open.hover + span {
@@ -414,6 +416,7 @@ display: none;
 .open #subMenu {
 display: block;
 }
+.open #shareMenu,
 .open #languageMenu {
 border: none;
 }
@@ -465,9 +468,11 @@ letter-spacing: 0.05em;
 display: block;
 }
 #subMenu {
-padding: 8px 16px;
+padding: 8px 0;
 border: none;
+text-align: center;
 }
+#shareMenu,
 #languageMenu {
 padding: 0 24px 8px;
 }
