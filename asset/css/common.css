@@ -1516,10 +1516,15 @@ border-radius: 4px;
 background-color: #FFF;
 box-shadow: 0 0 4px rgba( 0, 0, 0, 0.3 );
 }
-.slide img {
-width: 100%; height: auto;
-border: 1px solid #EFEFEF;
-vertical-align: bottom;
+.slide .slideInner {
+position: relative;
+padding-bottom: 75%;
+}
+.slide .slideInner iframe {
+position: absolute;
+top: 0; left: 0;
+width: 100%; height: 100%;
+margin: 0; padding: 0;
 }
 
 
