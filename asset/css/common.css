@@ -256,7 +256,9 @@ color: #CCC;
 #languageMenu li:last-child::after {
 display: none;
 }
-#shareMenu span,
+#shareMenu span {
+padding-left: 0.5em;
+}
 #languageMenu span {
 font-weight: bold;
 color: #FF833B;
@@ -266,8 +268,8 @@ color: #FF833B;
 color: #FFF;
 text-decoration: none;
 }
-#shareMenu a.hover,
-#languageMenu a.hover {
+#shareMenu a:hover,
+#languageMenu a:hover {
 color: #CCC;
 }
 
