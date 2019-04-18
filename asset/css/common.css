@@ -534,6 +534,7 @@ width: 70%;
 padding: 16px 32px;
 border-left: 1px solid #404040;
 vertical-align: middle;
+text-align: center;
 }
 #footerMainMenu,
 #footerSubMenu {
@@ -612,6 +613,18 @@ line-height: 1.5;
 font-size: 12px;
 color: #FFF;
 }
+footer #footerAbout p br,
+footer #officialName br {
+display: none;
+}
+footer #officialName {
+margin: 32px auto 0; padding: 0;
+line-height: 1.5;
+letter-spacing: 0.05em;
+font-size: 11px;
+color: #FFF;
+text-align: right;
+}
 footer #copyright {
 width: 100%;
 max-width: 980px;
@@ -659,6 +672,10 @@ margin: 0 auto 16px;
 
 @media screen and ( max-width: 640px ) {
 
+footer #footerAbout p br,
+footer #officialName br {
+display: block;
+}
 footer #copyright p {
 padding-right: 60px;
 line-height: 1.5;
@@ -666,7 +683,12 @@ line-height: 1.5;
 #footerSubMenu a {
 font-size: 10vw;
 }
-
+footer #officialName {
+text-align: center;
+}
+footer #officialName strong {
+display: inline-block;
+}
 } /* /640px */
 
 /* -------------------------------------------------- **
@@ -718,6 +740,9 @@ font-weight: 900;
 color: #FFF;
 font-family: 'Roboto', sans-serif;
 text-shadow: 0 0 8px rgba( 0, 0, 0, 0.6 );
+}
+#articleTitle h1 small {
+font-size: 50%;
 }
 #articleTitle p {
 margin-top: 0.8em;
@@ -1250,7 +1275,7 @@ animation: astrollGearAnimation 30s linear infinite;
 padding: 96px 16px;
 }
 #website.index #articleBody h2 {
-margin-bottom: 64px; padding: 16px 32px;
+margin-bottom: 64px; padding: 16px;
 background-color: rgba( 255, 255, 255, 0.5 );
 border: 1px solid #8095B0;
 font-size: 28px;
