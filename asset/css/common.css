@@ -1381,9 +1381,9 @@ animation: gearAnimation 5s linear infinite;
   0% { transform: rotate(   0deg); }
 100% { transform: rotate( 360deg); }
 }
-#articleBody #snsArea.sectionInner {
+/*#articleBody #snsArea.sectionInner {
 max-width: 1108px;
-}
+}*/
 #snsArea::after {
 content: '';
 display: block;
